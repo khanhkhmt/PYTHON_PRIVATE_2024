@@ -1,0 +1,38 @@
+#a = int (input())
+#b = int (input())
+#c = -3.6
+#print (type(a))
+#print (type(b))
+#print (type(c))
+#d = 'hello'
+#print (type(d))
+#print ('a+b=' , a+b) 
+#print ('a-b=' , a-b)
+#print ('a*b=' , a*b) 
+#print ('a/b=' , a/b)
+#print ('a//b=' , a // b)
+#if (a == b) :
+#    print ('a == b')
+#else :
+#    print ('a != b')
+string = "study python with hit"
+#print (f'string[-1] = {(string[-1])}')
+# lower : toàn chữ thg 
+# upper : toàn chữ hoa
+#print (string.lower())
+#print (string.upper())
+#print (string.find('t'))
+#print (string.replace('s' , 'S'))
+#print (string[0 : 3].upper() , string[3:21].upper() )
+import math
+
+pi = math.pi 
+
+import re 
+
+s = input()
+print (any (c.isalnum() for c in s))
+print (any (c.isalpha() for c in s))
+print (any (c.isdigit() for c in s))
+print (any (c.islower() for c in s))
+print (any (c.isupper() for c in s))
