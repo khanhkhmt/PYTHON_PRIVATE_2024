@@ -1,48 +1,76 @@
-# a = list (map (int , input().split()))
-# b = [2*i for i in range(1 , 5)]
-# print (b)
-# n = int(input())
-# c = [i for i in range (n)]
-# sum = 0 
-# for i in c :
-#     sum += i
-# print (sum) 
-# c = [[int(input()) for i in range (n)] for j in range (n)]
+# a = (1, 3, 2, 4, 5)
+# b = ("Hoa", [1, 2, 3], "Hồng", (2, 2))
+# b[1][1] = 5
+# print(b)
+# info = ("alice" , 20 , "developer" , 'alice')
+# name , name , age ,job = info 
+# print (name)
+# print (age)
+# print (job)
+# print (info.count('alice'))
+# print (info.index('alice'))
+# import time 
+# def test(n , type) :
+#     import time 
+#     if type == "list" :
+         
+#         _start = time.time()
+#         a  = [i for i in range (n)]
+#         end_time = time.time()
+#     elif type == 'tuple' :
+#         _start = time.time()
+#         a  = list((i for i in range (n)))
+#         end_time = time.time()
+#     print (end_time - _start)
+# test (1000000, 'list')
+# test (1000000 , 'tuple')
+import random
+# c = [int(random.uniform(0,10)) for _ in range(10)]
+# c = tuple(c)
 # print (c)
-# l = [1 , 3,3,3,2,3,5]
-# print(l.pop(2))
-# print (l)
-# l = ['k' , 'l' , 'm'] 
-# l.remove('h')
-# print (l)
-# l = [1 ,2,3,6,8] 
-# l.sort(reverse=True)
-# print (l)
-# a = [1,2,3,4,5,6]
-# b = a 
-# c = a.copy()
-n = int(input())
-a = [int(input()) for i in range (n)]
-a.sort()
-print (a) 
-print (max(a))
-print (min(a))
-for i in a :
-    if i % 2 == 0 :
-        c = i
-        break
-index = a.index(c) 
-print (index)
-if (a.count(3)) : print ('yes')
-else : print ('no')
-k = int (input())
-a.insert(k , 5)
-for i in a :
-    if (i % 2 == 0) : a.remove(i)
-print (a)
-c = [1,2,3,4,5,]
-m = int (input())
-b = [int(input()) for i in range (m)]
-b = 2 * b 
-b.reverse() 
-print (c+b)
+# a = [c[i] for i in range (10) if c[i] % 2 == 0]
+# print (len(a))
+# c = 100
+# my_tuple = tuple(random.randint(0,c) for _ in range (c))
+# print (my_tuple.count(c))
+# eventuple = tuple (i for i in my_tuple if i % 2 ==0)
+# x = 10
+# if x in eventuple :
+#     print ({x}, 'in even tuple')
+# else : print ('not')
+# print (eventuple.index(x))
+# print (eventuple) 
+# eventuple = tuple (i for i in my_tuple if i > 20) 
+# info = {"alice" , 20 , "developer" , 'alice'}
+# info.add (1)
+# info.remove('alice')
+# info.discard(2)
+# print (info)
+# print (info.pop())
+# info_dict = {
+#     'name' : 'alice' ,
+#     'age' : 20 ,
+#     'private_info' : {
+#         'weight' : 58 ,
+#         'height' : 168
+#     } ,
+#     'country' : 'vietnam' 
+# }
+# print (info_dict) 
+# print (info_dict ['name'])
+# print (info_dict.keys())
+# print (info_dict.values())
+# for key in info_dict.keys() :
+#     print (key , info_dict.get(key))
+# for key , value in info_dict.items() :
+#     print (key , value)
+# print (info_dict.get("private_info").get('weight'))
+dict1 = {
+    2023600954 : 'khanh' ,
+    2020601001 : 'k' ,
+    2023925455 : 'quan' ,
+    2564589975 : 'l'  
+}
+check = 2020601001
+if check in dict1 :
+    print (dict1[check])
