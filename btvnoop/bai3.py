@@ -13,14 +13,14 @@ class MyStack :
             p = self.st.pop() 
             return p
     def push(self, value) :
-        if self.isFull : print ("stack is full")
+        if self.isFull() : print ("stack is full")
         else:
-            self.st.append(value) 
+            return self.st.append(value) 
     def top (self) :
         if self.isEmpty():
             return None
         else:
-            top_value = self.stack[-1]
+            top_value = self.st[-1]
             return top_value
 stack1 = MyStack(capacity=5)
 stack1.push(1)

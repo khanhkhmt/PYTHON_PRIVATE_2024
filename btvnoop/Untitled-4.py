@@ -8,22 +8,23 @@ class Stack :
         return  len(self.st) >= self.capacity
     def pop(self) :
         if self.isEmpty() :
-            return None
+            return False
         else :
             p = self.st.pop() 
             return p
-    def push(self, value : int) :
+    def push(self, value) :
         if self.isFull() : print ("stack is full")
         else:
             return self.st.append(value) 
     def top (self) :
         if self.isEmpty():
-            return None
+            return False 
         else:
-            top_value = self.st[-1]
+            top_value = self.stack[-1]
             return top_value
-
-stack1 = Stack(capacity=5)
+    # def kt (self) :
+    #     return self.st
+stack1 = Stack(5)
 stack1.push(1)
 stack1.push(2)
 print(stack1.isFull())
