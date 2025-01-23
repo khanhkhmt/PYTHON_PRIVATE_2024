@@ -1,1 +1,0 @@
-stack1 = Stack(capacity=5)

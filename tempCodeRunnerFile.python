@@ -1,34 +1,18 @@
-class Stack :
-    def __init__(self , capacity : int):
-        self.capacity = capacity 
-        self.st = []
-    def isEmpty(self) -> bool :
-        return len(self.st) == 0
-    def isFull(self) -> bool :
-        return  len(self.st) >= self.capacity
-    def pop(self) :
-        if self.isEmpty() :
-            return None
-        else :
-            p = self.st.pop() 
-            return p
-    def push(self, value : int) :
-        if self.isFull() : print ("stack is full")
-        else:
-            return self.st.append(value) 
-    def top (self) :
-        if self.isEmpty():
-            return None
-        else:
-            top_value = self.st[-1]
-            return top_value
+# Đọc, hiển thị và lưu ảnh
 
-stack1 = Stack(capacity=5)
-stack1.push(1)
-stack1.push(2)
-print(stack1.isFull())
-print(stack1.top())
-print(stack1.pop())
-print(stack1.top())
-print(stack1.pop())
-print(stack1.isEmpty())
+import cv2
+# Hàm cv2.imread(): Đọc ảnh từ một đường dẫn và trả về một ma trận (numpy array) đại diện cho ảnh.
+# Cú pháp:
+path = r"C:\Users\admin\Pictures\back ground\OIP.png" # Đường dẫn của ảnh
+img = cv2.imread(path) # Nếu file ảnh không tồn tại hoặc không thể đọc được, cv2.imread() sẽ trả về None.
+
+# Hàm cv2.imshow(): Mở cửa sổ mới để hiển thị ảnh.
+# Cú pháp:
+cv2.imshow("Hien thi", img)
+cv2.waitKey(0) # cv2.waitKey(): để giữ cửa sổ hiển thị cho đến khi người dùng nhấn một phím.
+# cv2.waitKey(0): Đợi người dùng nhấn một phím (0 nghĩa là đợi vô hạn)
+
+# Hàm cv2.imwrite(): Để lưu ảnh sau khi thực hiện các thao tác
+fileName = "anhmoi.jpg"
+cv2.imwrite(fileName, img)
+print("thanh cong")
