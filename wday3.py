@@ -58,9 +58,9 @@ st.markdown(
         Luôn xinh đẹp rạng ngời tỏa nắng<br>
         Hạnh phúc ngập tràn, ấm áp quanh năm!<br><br>
         
-        Cảm ơn những hy sinh thầm lặng<br>
-        Cảm ơn tình yêu dịu ngọt đong đầy<br>
-        Bạn xứng đáng được trân trọng<br>
+        Cảm ơn những hy sinh thầm lặng
+        Cảm ơn tình yêu dịu ngọt đong đầy
+        Bạn xứng đáng được trân trọng
         Hôm nay và cả những ngày sau này!
         </p>
     </div>
