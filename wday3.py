@@ -81,8 +81,25 @@ st.markdown(
 
 # Add interactive button
 if st.button("🎁 Nhấn để nhận quà"):
-    st.balloons()
-    st.success("🎀 Bạn xứng đáng nhận được: Một bó hoa hồng, một hộp chocolate và vô số cái ôm ấm áp!")
+     st.markdown("""
+    <script>
+    function createFlower() {
+        const flower = document.createElement('div');
+        flower.innerHTML = '🌸';
+        flower.style.left = Math.random() * 100 + 'vw';
+        flower.style.animationDuration = Math.random() * 3 + 2 + 's';
+        flower.classList.add('petal');
+        document.body.appendChild(flower);
+        
+        setTimeout(() => { flower.remove() }, 5000);
+    }
+    setInterval(createFlower, 300);
+    </script>
+    """, unsafe_allow_html=True)
+    
+    st.success("💐 Bạn nhận được: 1000 bông hồng tươi thắm, nụ cười rạng rỡ và những lời yêu thương ngọt ngào!")
+    # st.balloons()
+    # st.success("🎀 Bạn xứng đáng nhận được: Một bó hoa hồng, một hộp chocolate và vô số cái ôm ấm áp!")
     # st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
 
 # Footer
