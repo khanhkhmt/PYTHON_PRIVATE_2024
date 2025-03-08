@@ -80,10 +80,35 @@ st.markdown(
 #     st.image("https://img.upanh.tv/2023/03/07/8-3-3.jpg", caption="Trao yêu thương")
 
 # Add interactive button
-if st.button("🎁 Nhấn để nhận quà"):
-    st.balloons()
-    st.success("🎀 Bạn xứng đáng nhận được: Một bó hoa hồng, một hộp chocolate và vô số cái ôm ấm áp!")
+# if st.button("🎁 Nhấn để nhận quà"):
+#     st.balloons()
+#     st.success("🎀 Bạn xứng đáng nhận được: Một bó hoa hồng, một hộp chocolate và vô số cái ôm ấm áp!")
     # st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
+# Add interactive button
+
+if st.button("🌸 Nhận Hoa May Mắn 🌸", key="flower_button"):
+    # Hiệu ứng hoa rơi
+    st.markdown("""
+    <script>
+    function createFlower() {
+        const flower = document.createElement('div');
+        flower.innerHTML = '🌸';
+        flower.style.left = Math.random() * 100 + 'vw';
+        flower.style.animationDuration = Math.random() * 3 + 2 + 's';
+        flower.classList.add('petal');
+        document.body.appendChild(flower);
+        
+        setTimeout(() => { flower.remove() }, 5000);
+    }
+    setInterval(createFlower, 300);
+    </script>
+    """, unsafe_allow_html=True)
+    
+    st.success("💐 Bạn nhận được: 1000 bông hồng tươi thắm, nụ cười rạng rỡ và những lời yêu thương ngọt ngào!")
+    
+    # Hiển thị ảnh hoa nở
+    st.image("https://i.pinimg.com/originals/6b/6d/9c/6b6d9c23f3c1d3eb417a9e6094535b2b.gif", 
+             caption="Hoa nở rộ dành cho bạn")
 
 # Footer
 st.markdown(
