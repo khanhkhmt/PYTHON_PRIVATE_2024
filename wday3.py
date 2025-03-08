@@ -98,6 +98,8 @@ if st.button("🎁 Nhấn để nhận quà"):
     """, unsafe_allow_html=True)
     
     st.success("💐 Bạn nhận được: 1000 bông hồng tươi thắm, nụ cười rạng rỡ và những lời yêu thương ngọt ngào!")
+    st.image("https://i.pinimg.com/originals/6b/6d/9c/6b6d9c23f3c1d3eb417a9e6094535b2b.gif", 
+             caption="Hoa nở rộ dành cho bạn")
     # st.balloons()
     # st.success("🎀 Bạn xứng đáng nhận được: Một bó hoa hồng, một hộp chocolate và vô số cái ôm ấm áp!")
     # st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
